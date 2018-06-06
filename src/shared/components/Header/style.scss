@@ -1,0 +1,55 @@
+@import "~styles/mixins";
+
+.logo {
+  animation: pulse 1.5s infinite;
+  border: 0;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  width: 50px;
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}
+
+.nav {
+  align-items: center;
+  background-color: $blue-black;
+  display: flex;
+  justify-content: space-around;
+  height: 48px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.option {
+  @include font-titillium;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  &,
+  &:visited {
+    color: white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}

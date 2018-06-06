@@ -2,6 +2,37 @@
  * Collection of global mixins to be used all around the app.
  */
 
-@mixin h1 {
-  font-size: 36px;
+$blue-black: #002e45;
+$blue-dark-1: #155773;
+$blue-dark-2: #1d79a0;
+$blue-light: #29abe2;
+
+@mixin font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-titillium {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+@mixin h1-light {
+  @include font-titillium;
+
+  color: white;
+  font-size: 3.25em;
+  letter-spacing: 0.03em;
+  margin: 20px 0 10px;
+  max-width: 800px;
+  text-align: center;
+}
+
+@mixin h1-dark {
+  @include font-titillium;
+
+  color: $blue-black;
+  font-size: 3.25em;
+  letter-spacing: 0.03em;
+  margin: 20px 0 10px;
+  max-width: 800px;
+  text-align: center;
 }
