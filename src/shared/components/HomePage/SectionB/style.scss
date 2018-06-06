@@ -1,0 +1,60 @@
+@import "~styles/mixins";
+
+.card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  max-width: 300px;
+  position: relative;
+
+  h1 {
+    @include font-titillium;
+
+    color: $blue-black;
+    font-size: 31.5px;
+    margin: 20px 0 10px;
+  }
+
+  p {
+    @include font-opensans;
+
+    color: $blue-dark-1;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  opacity: 1;
+  width: 115px;
+}
+
+.text {
+  @include font-opensans;
+
+  color: hsla(0, 0, 100%, 0.7);
+  line-height: 1.5em;
+  max-width: 800px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title {
+  @include font-titillium;
+
+  color: white;
+  font-size: 3.25em;
+  letter-spacing: 0.03em;
+  margin: 20px 0 10px;
+  max-width: 800px;
+  text-align: center;
+}

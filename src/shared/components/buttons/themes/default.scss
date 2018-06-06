@@ -1,0 +1,82 @@
+/**
+ * The default button theme: white button with dark gray label, gray border, and
+ * some extra effects in different state.
+ *
+ * The comments in this file explain how to write a custom button theme.
+ */
+
+@import "~styles/mixins";
+
+/* General button style - medium size. */
+.button {
+  @include font-titillium;
+
+  align-items: center;
+  background: none;
+  border-bottom: none;
+  border-left: 2px solid $blue-dark-2;
+  border-right: 2px solid $blue-dark-2;
+  border-top: none;
+  color: $blue-light;
+  display: inline-flex;
+  font-size: 1.25em;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  line-height: 1em;
+  min-height: 17px;
+  margin: 10px 5px;
+  padding: 9px 16px;
+  vertical-align: middle;
+}
+
+/* Additional styling for a disabled button. */
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.3;
+}
+
+/* .link and .regular classes are applied only to active button-like links,
+* and real buttons (rendered as <button> elements). */
+.link,
+.regular {
+  text-decoration: none;
+
+  /* To prevent different styling of the button-like link once it has been
+  * visited. */
+  &:visited {
+    color: $blue-light;
+  }
+
+  &:focus {
+    color: $blue-light;
+  }
+
+  &:hover {
+    color: $blue-light;
+  }
+
+  &.active,
+  &:active {
+    color: $blue-light;
+  }
+}
+
+/* And a few extra classes to support XS, SM and LG sizes. */
+
+.xs {
+  font-size: 0.9em;
+  min-height: 12px;
+  padding: 1px 13px;
+}
+
+.sm {
+  font-size: 1em;
+  font-weight: 600;
+  min-height: 30px;
+  padding: 4px 18px;
+}
+
+.lg {
+  min-height: 50px;
+  padding: 5px 28px;
+}

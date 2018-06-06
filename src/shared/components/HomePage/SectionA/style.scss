@@ -1,0 +1,13 @@
+@import "~styles/mixins";
+
+.text {
+  @include font-opensans;
+  
+  color: hsla(0, 0, 100%, 0.7);
+  line-height: 1.5em;
+  max-width: 800px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title { @include h1-light; }

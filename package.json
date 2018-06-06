@@ -36,7 +36,9 @@
     "cross-env": "^5.1.4",
     "lodash": "^4.17.10",
     "react": "^16.4.0",
+    "react-css-super-themr": "^2.2.0",
     "react-dom": "^16.4.0",
+    "react-particles-js": "^2.2.0",
     "react-router-dom": "^4.2.2",
     "topcoder-react-utils": "^0.4.8"
   },
