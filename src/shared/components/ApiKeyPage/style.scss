@@ -1,3 +1,115 @@
 @import "~styles/mixins";
 
-.title { @include h1-light; }
+.box {
+  @include font-titillium;
+
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+.title {
+  @include h1-light;
+}
+
+.form {
+  display: block;
+  background: white;
+  border-radius: 3px;
+  min-height: 300px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  padding: 15px 20px 40px;
+  margin: 15px 0;
+}
+
+.form-group {
+  padding: 5px 10px;
+  margin-top: 5px;
+
+  input[type='text'],
+  input[type='email'] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    background: none;
+    padding: 5px 0 5px 5px;
+  }
+
+  input[type='checkbox'] {
+    margin-right: 5px;
+  }
+
+  &.error {
+    background: $red-light;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.form-error {
+  text-align: center;
+  color: $red;
+  background: $red-light;
+  padding: 5px 0;
+}
+
+.form-inline-group {
+  display: inline-block;
+  max-width: 150px;
+  padding-right: 10px;
+
+  & > input {
+    display: block;
+    width: 100%;
+  }
+
+  & > span {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+.form-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+
+  .required {
+    color: $red;
+    font-weight: 700;
+  }
+}
+
+.form-group > .error-msg {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: $red;
+}
+
+.submit {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 5px 10px;
+}
+
+.description {
+  color: $blue-black;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.legal {
+  padding: 30px 60px;
+  color: white;
+  text-align: center;
+}
+
+.legal > a {
+  color: inherit;
+}
