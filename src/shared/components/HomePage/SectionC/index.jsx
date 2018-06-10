@@ -17,10 +17,10 @@ export default function SectionC() {
             </div>
           )}
           renderCenterLeftControls={({ previousSlide }) => (
-            <div onClick={previousSlide} styleName="w-icon-slider left" />
+            <div onClick={previousSlide} styleName="w-icon-slider left" onKeyDown={() => {}} role="presentation" />
           )}
           renderCenterRightControls={({ nextSlide }) => (
-            <div onClick={nextSlide} styleName="w-icon-slider right" />
+            <div onClick={nextSlide} styleName="w-icon-slider right" onKeyDown={() => {}} role="presentation" />
           )}
         >
           <div styleName="w-slide">
